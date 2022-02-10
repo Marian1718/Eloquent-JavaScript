@@ -9,10 +9,12 @@ Write a loop that makes seven calls to console.log to output the following trian
 ######
 #######
 It may be useful to know that you can find the length of a string by writing .length after it.
-let stringForTriangle = "";
 */
 
-for(let i = 0; i < 7; i++)
+let stringForTriangle = "";
+let i = 0;
+while (i < 7)
 {
   console.log(stringForTriangle += "#");
+  i++;
 }
