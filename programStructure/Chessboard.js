@@ -21,17 +21,9 @@ function generateChessboard(size) {
     let stringForChess = "";
     for (let k = 0; k < size; k++) {
       if (i % 2 === 0) {
-        if (k % 2 === 0) {
-          stringForChess = stringForChess + " ";
-        } else {
-          stringForChess = stringForChess + "#";
-        }
+        k % 2 === 0 ? (stringForChess += " ") : (stringForChess += "#");
       } else {
-        if (k % 2 === 0) {
-          stringForChess = stringForChess + "#";
-        } else {
-          stringForChess = stringForChess + " ";
-        }
+        k % 2 === 0 ? (stringForChess += "#") : (stringForChess += " ");
       }
     }
     console.log(stringForChess);

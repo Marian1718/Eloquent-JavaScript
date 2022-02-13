@@ -12,9 +12,7 @@ It may be useful to know that you can find the length of a string by writing .le
 */
 
 let stringForTriangle = "";
-let i = 0;
-while (i < 7)
+while (stringForTriangle.length < 7)
 {
   console.log(stringForTriangle += "#");
-  i++;
 }
