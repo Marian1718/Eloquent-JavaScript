@@ -15,12 +15,13 @@ The function should accept a single parameter (a positive, whole number) and ret
 Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
 */
 function isEven(a) {
-  if (a === 0) {
+  const check = Math.abs(a);
+  if (check === 0) {
     return true;
-  } else if (a === 1) {
+  } else if (check === 1) {
     return false;
   } else {
-    return isEven(a - 2);
+    return isEven(check - 2);
   }
 }
 
